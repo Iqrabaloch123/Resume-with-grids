@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 16px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    header,
+    .section {
+      grid-column: span 12;
+    }
+    
+    @media (min-width: 768px) {
+      header,
+      .section {
+        grid-column: span 6;
+      }
+    }
+    
+    @media (min-width: 992px) {
+      header {
+        grid-column: span 4;
+      }
+      
+      .section {
+        grid-column: span 8;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>IQRA BALOCH</h1>
+      <p>Email: iqrabalouch2233@gmail.com | Phone: 03175559305</p>
+    </header>
+
+    <section class="section">
+      <h2>Education</h2>
+      <div class="item">
+        <h3>National university of science and technology</h3>
+        <p>Bachelor's Degree in Computer Science, 2019-2023</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Experience</h2>
+      <div class="item">
+        <h3>Internship</h3>
+        <p>Askari Bank Limited, 2022</p>
+        <ul>
+          <li>Data analyst</li>
+          <li>IT expert</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Data Science</li>
+        <li>WordPress</li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+</html>
